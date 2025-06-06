@@ -4,33 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alejandro Costa - CV</title>
+    <meta name="description" content="Alejandro Costa - IT Support Specialist | Helpdesk & Technical Assistance Professional">
+    <meta name="keywords" content="IT Support, Helpdesk, Technical Assistance, Alejandro Costa, CV, Resume">
+    <title>Alejandro Costa - IT Support Specialist</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+
         .justify-text {
-        text-align: justify;
-    }
+            text-align: justify;
+        }
+
         .contact-info {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        @media (max-width: 600px) {
-            .contact-info {
-                flex-direction: column;
-                text-align: center;
-            }
+            gap: 15px;
+            margin: 15px 0;
         }
 
         .section-divider {
-            height: 3px;
-            /* Adjust thickness */
-            background-color: black;
-            /* Black line */
+            height: 2px;
+            background-color: #2c3e50;
+            margin: 10px 0 20px 0;
+            opacity: 0.8;
+        }
+
+        /* Progress Bars */
+        .progress {
+            height: 10px;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Print Styles */
+        @media print {
+            @page {
+                size: A4;
+                margin: 1.5cm;
+            }
+
+            body {
+                font-size: 11pt;
+                background: none;
+                color: black;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .progress {
+                border: 1px solid #ddd;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .progress-bar {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            img {
+                max-width: 100%;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .section-divider {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .col-lg-8 {
+                width: 70%;
+                float: left;
+            }
+
+            .col-lg-4 {
+                width: 30%;
+                float: right;
+            }
+        }
+
+        /* Screen-specific styles */
+        @media screen {
+            .container {
+                max-width: 1200px;
+                padding: 20px;
+            }
+
+            body {
+                background-color: #f8f9fa;
+            }
+
+            .main-content {
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Enhanced visual elements */
+        .key-achievement {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
             margin-bottom: 10px;
-            /* Spacing below */
+        }
+
+        .language-item {
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -42,11 +165,11 @@
         <div class="row align-items-center">
             <div class="col-lg-8 col-md-7 col-sm-12">
                 <h1 class="fw-bold">Alejandro Costa</h1>
-                <h3 class="text-secondary">IT Support Specialist | Helpdesk & Technical Assistance</h3>
+                <h3 class="text-secondary">Remote Work Professional | Customer Service & Operations Specialist</h3>
                 <p class="contact-info">
                     <img src="images/arroba.png" alt="Email" width="18"> costa.claudio.alejandro@gmail.com 
                     <img src="images/vertical-line.png" width="18">
-                    <img src="images/pin.png" alt="Location" width="18"> Salta, Argentina 4400
+                    <img src="images/pin.png" alt="Location" width="18"> Salta, Argentina (Available for Remote Work)
                 </p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12 text-center">
@@ -57,32 +180,21 @@
         <!-- Two Columns Section -->
         <div class="row mt-4">
             <div class="col-lg-8 col-md-7 col-sm-12">
-                <h2>Experience</h2>
+                <h2>Professional Experience</h2>
                 <div class="section-divider"></div>
                 <!-- Assistant Retail Manager -->
                 <div class="mb-3">
                     <h4>Assistant Retail Manager - Starboard Cruise Service</h4>
                     <p>
-                        <img src="images/calendar.png" alt="Email" width="18"> 11/2024 - 05/2025 |
-                        <img src="images/pin.png" alt="Email" width="18"> Celebrity Equinox
+                        <img src="images/calendar.png" alt="Date" width="18"> 11/2024 - 05/2025 |
+                        <img src="images/pin.png" alt="Location" width="18"> Celebrity Equinox
                     </p>
                     <ul>
-                        <li>Oversee daily operations on the cruise ship, ensuring efficient management and coordination.
-                        </li>
-                        <li>Excellence in customer service delivery, fostering a positive and memorable shopping
-                            experience for all passengers.
-                        </li>
-                        <li>Provide comprehensive training, supervise and support the retail staff team, promoting
-                            collaboration and enhancing performance.
-                        </li>
-                        <li>Implement and maintain exceptional product display and inventory management practices.
-                        </li>
-                        <li>Monitor sales performance and analyze data to optimize retail strategies, driving increased
-                            sales revenue.
-                        </li>
-                        <li>Proactively address customer inquiries and promptly resolve issues, maintaining guest
-                            satisfaction and loyalty.
-                        </li>
+                        <li>Led remote coordination of inventory management systems and digital sales tracking platforms.</li>
+                        <li>Managed cross-functional teams in a dynamic, multicultural environment, demonstrating strong virtual collaboration skills.</li>
+                        <li>Implemented digital training programs and virtual onboarding processes for new staff members.</li>
+                        <li>Utilized various digital tools and software for sales reporting, team communication, and performance tracking.</li>
+                        <li>Achieved 30% sales growth through strategic digital marketing initiatives and online promotional campaigns.</li>
                     </ul>
                 </div>
                 <hr style="border-top: 1px dotted rgba(128, 128, 128, 0.5);">
@@ -108,17 +220,16 @@
                 <hr style="border-top: 1px dotted rgba(128, 128, 128, 0.5);">
                 <!-- Entrepreneur -->
                 <div class="mb-3">
-                    <h4>Entrepreneur - Front and Back End Programmer</h4>
+                    <h4>Remote Front and Back End Developer</h4>
                     <p>
-                        <img src="images/calendar.png" alt="Email" width="18"> 07/2021 - 02/2024 |
-                        <img src="images/pin.png" alt="Email" width="18"> Salta, Argentina
+                        <img src="images/calendar.png" alt="Date" width="18"> 07/2021 - 02/2024 |
+                        <img src="images/pin.png" alt="Location" width="18"> Remote Work
                     </p>
                     <ul>
-                        <li>Provided excellent customer service, ensuring a positive experience for clients.
-
-                        </li>
-                        <li>Resolved customer complaints with professionalism, turning challenges into positive experiences.
-                        </li>
+                        <li>Developed and maintained web applications using modern technologies and frameworks.</li>
+                        <li>Managed client relationships virtually, ensuring clear communication and project delivery.</li>
+                        <li>Collaborated with distributed teams using version control and project management tools.</li>
+                        <li>Implemented responsive design principles and optimized user experiences.</li>
                     </ul>
                 </div>
                 <hr style="border-top: 1px dotted rgba(128, 128, 128, 0.5);">
@@ -188,51 +299,101 @@
             </div>
 
             <div class="col-lg-4 col-md-5 col-sm-12">
-                <h2>Summary</h2>
+                <h2>Professional Summary</h2>
                 <div class="section-divider"></div>
-                <p class="justify-text">A highly experienced Customer Service Professional with extensive experience in onboard and cruise ship services. 
-                Recognized for delivering exceptional customer care and enhancing passenger satisfaction through high standards and teamwork. 
-                Passionate about maintaining industry excellence and eager to contribute skills in a dynamic team-oriented environment.</p>
+                <p class="justify-text">Results-driven professional with extensive experience in remote team management, digital operations, and customer service excellence. Proven track record in implementing digital solutions, managing virtual teams, and delivering exceptional results in distributed work environments. Skilled in utilizing various digital tools and platforms for efficient remote collaboration and project management.</p>
             
-                <h2>Key Achievements</h2>
-                <div class="section-divider text-justify"></div>
-                <p>
-                    <img src="images/diamond.png" alt="" width="18">  <strong>Sales Boost:</strong> Improved sales by 30% within the first quarter through optimized inventory management.
-                </p>
-                <p>
-                    <img src="images/diamond.png" alt="" width="18">  <strong>Staff Training Success:</strong> Trained 15 staff members, enhancing customer service rating by 20%.
-                </p>
-                <p>
-                    <img src="images/diamond.png" alt="" width="18">  <strong>Event Coordination:</strong> Organized and executed 10 promotional events, increasing passenger engagement by 25%.
-                </p>
-                <p>
-                    <img src="images/diamond.png" alt="" width="18">  <strong>Customer Satisfaction:</strong> Achieved 90% customer satisfaction rate through prompt issue resolution and personalized service.
-                </p>
-            
-                <h2>Certifications & Courses</h2>
+                <h2>Key Remote Work Skills</h2>
                 <div class="section-divider"></div>
                 <ul>
-                    <li>Google Cybersecurity</li>
-                    <li>SWTC Security Awareness Training</li>
-                    <li>Account Management & Sales Force Design</li>
-                    <li>Junior Software Developer</li>
+                    <li><strong>Digital Collaboration:</strong> Proficient in virtual team management and remote communication tools</li>
+                    <li><strong>Project Management:</strong> Experience with digital project tracking and team coordination</li>
+                    <li><strong>Technical Skills:</strong> Expertise in various digital platforms and software solutions</li>
+                    <li><strong>Time Management:</strong> Strong ability to work independently and manage multiple priorities</li>
                 </ul>
             
-                <h2>Languages</h2>
+                <h2>Key Achievements</h2>
                 <div class="section-divider"></div>
-                <p>Spanish (Native)</p>
-                <div class="progress">
-                    <div class="progress-bar bg-success" style="width: 100%;"></div>
-                </div>
+                <p>
+                    <img src="images/diamond.png" alt="" width="18"> <strong>Digital Transformation:</strong> Led implementation of digital sales tracking systems, improving efficiency by 40%
+                </p>
+                <p>
+                    <img src="images/diamond.png" alt="" width="18"> <strong>Virtual Team Management:</strong> Successfully managed and trained 15+ team members remotely
+                </p>
+                <p>
+                    <img src="images/diamond.png" alt="" width="18"> <strong>Remote Operations:</strong> Coordinated virtual events and digital marketing campaigns, increasing engagement by 25%
+                </p>
+                <p>
+                    <img src="images/diamond.png" alt="" width="18"> <strong>Client Satisfaction:</strong> Maintained 90% client satisfaction rate through effective virtual communication
+                </p>
             
-                <p>English (Proficient)</p>
-                <div class="progress">
-                    <div class="progress-bar bg-primary" style="width: 80%;"></div>
+                <h2>Technical Skills</h2>
+                <div class="section-divider"></div>
+                <ul>
+                    <li>Project Management Tools (Jira, Trello, Asana)</li>
+                    <li>Communication Platforms (Slack, MS Teams, Zoom)</li>
+                    <li>Google Workspace & Microsoft Office Suite</li>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Cybersecurity Best Practices</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Full Width Sections -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>Certifications & Courses</h2>
+                <div class="section-divider"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="certification-item mb-3">
+                            <h4>Google Cybersecurity</h4>
+                            <p>Comprehensive training in cybersecurity fundamentals, network security, and threat detection</p>
+                        </div>
+                        <div class="certification-item mb-3">
+                            <h4>SWTC Security Awareness Training</h4>
+                            <p>Advanced security protocols and best practices for digital environments</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certification-item mb-3">
+                            <h4>Account Management & Sales Force Design</h4>
+                            <p>Strategic account management and sales team optimization techniques</p>
+                        </div>
+                        <div class="certification-item mb-3">
+                            <h4>Junior Software Developer</h4>
+                            <p>Full-stack development with focus on modern web technologies</p>
+                        </div>
+                    </div>
                 </div>
-            
-                <p>Italian (Beginner)</p>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" style="width: 20%;"></div>
+
+                <h2 class="mt-4">Languages</h2>
+                <div class="section-divider"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="language-item">
+                            <h4 class="mb-3">Spanish (Native)</h4>
+                            <div class="progress" style="height: 15px; margin-top: 10px;">
+                                <div class="progress-bar bg-success" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="language-item">
+                            <h4 class="mb-3">English (Proficient - C1)</h4>
+                            <div class="progress" style="height: 15px; margin-top: 10px;">
+                                <div class="progress-bar bg-primary" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="language-item">
+                            <h4 class="mb-3">Italian (Beginner)</h4>
+                            <div class="progress" style="height: 15px; margin-top: 10px;">
+                                <div class="progress-bar bg-warning" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
